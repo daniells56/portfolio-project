@@ -8,14 +8,39 @@ align-items: center;
 */
 
 
-body {
-    margin: 0px;
+html {
+    scroll-behavior: smooth;
+
 }
+
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+
+ }
+
+
+
+
+    .site {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    div.site {
+        height: 100%;
+        overflow: hidden;
+    }
 
 .tech-images img {
     width: 104px;
     height: 104px;
     margin-bottom: 420px;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -52,14 +77,12 @@ body {
 }
 
 .title2 {
-    position: absolute;
 
-    top: -160%;
     font-family: 'MuseoModerno', cursive;
     font-style: normal;
     font-weight: 200;
     font-size: 70px;
-    line-height: 111px;
+    line-height: 111px;;
 
     color: #CCCCCC;
 }
@@ -104,9 +127,18 @@ li:hover {
     margin-left: 30px;
     text-align: center;
     transition: color 0.6s;
+    cursor: pointer;
 }
 
 
+
+.Sites {
+
+    position: relative;
+    display: inline;
+    bottom: 580px;
+
+}
 
 
 .title-sites {
@@ -126,9 +158,11 @@ li:hover {
     height: 83px;
     background-color: #749BFF;
     border-radius: 40px;
-    margin-bottom: 54%;
     text-align: center;
+    position: relative;
+    bottom: 413px;
     transition: 200ms;
+
 
 
 }
@@ -166,9 +200,16 @@ li:hover {
     background: #2A7F92;
     border: 2px solid #FFFFFF;
     border-radius: 14px;
-    margin-left: 29px;
+    margin-left: 10px;
+    transition: 200ms;
+    z-index: 2;
 
 
+}
+
+.Projeto:hover {
+    transform: scale(1.1);
+    transition: 200ms;
 }
 
 #title-project {
@@ -185,6 +226,9 @@ li:hover {
 
 
 .load-txt {
+    position: relative;
+    top: 70px;
+    left: 14px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -192,6 +236,166 @@ li:hover {
     line-height: 75px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 29%;
-    margin-left: 2%;
+}
+
+.loadingpae {
+    position: absolute;
+
+    top: -1910%;
+
+}
+
+.Projeto p {
+
+    opacity: 0;
+    color: #e8e8e8;
+    font-family: Roboto;
+    font-size: 20px;
+
+
+}
+
+.Projeto:hover p {
+
+    display: block;
+    position: relative;
+    opacity: 1;
+    color: #e8e8e8;
+    font-family: Roboto;
+    font-size: 16px;
+    bottom: 140px;
+    text-align: center;
+    transition: 200ms opacity;
+    z-index: 100;
+
+
+
+
+}
+
+
+.Projeto div {
+
+    visibility: hidden;
+    position: absolute;
+    width: 226px;
+    height: 70px;
+    background-color: dimgray;
+    filter: blur(2px);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 2px solid dimgray;
+    z-index: 1;
+
+
+}
+
+.Projeto:hover div {
+
+    visibility: visible;
+
+}
+
+
+
+.title-desci {
+
+    display: flex;
+    justify-content: space-around;
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 111px;
+    color: #FFFFFF;
+
+
+
+
+
+}
+
+.discr {
+
+    bottom: 700px;
+
+}
+
+.back {
+
+    position: relative;
+    position: relative;
+    bottom: 260%;
+    text-align: center;
+
+    min-width: 902px;
+    min-width: 290px;
+
+    background: rgba(189, 209, 209, 0.58);
+    border-radius: 22px;
+
+}
+
+.sec-d {
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.txt-des {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Social-Medias a {
+    position: relative;
+    bottom: 290%;
+}
+
+.Social-Medias a img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.Social-Medias a img:hover {
+    transition: 200ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        position: absolute;
+
+        top: -190%;
+        font-family: 'MuseoModerno', cursive;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 50px;
+        line-height: 111px;
+
+        color: #CCCCCC;
+    }
+
+    .Social-Medias a {
+        position: relative;
+        bottom: 280%;
+        max-width: 100px;
+    }
+
+
+
+
+
+
 }

@@ -34,7 +34,7 @@
   .coffee {
 
     background: #fff;
-    top: 350px;
+    bottom: 200px;
     display: grid;
     border-radius: 4px;
     grid-template-columns: repeat(3, 1fr);
